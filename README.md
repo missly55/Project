@@ -1,4 +1,4 @@
-# Cybersecurity-Projects
+# Projects
 # Network Security Homelab using VirtualBox, Wireshark, pfSense, and Ubuntu
 
 ## Overview
