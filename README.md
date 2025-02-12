@@ -26,8 +26,8 @@ This project aims to create a **Network Security Homelab** for learning and test
    - **pfSense**: Create a VM for pfSense using the downloaded pfSense ISO. Allocate at least 1GB of RAM and configure network adapters as required.
 
 ### 3. Configure Networking in VirtualBox
-   - Set the **Ubuntu VM** to use a **Bridged Adapter** or **Internal Network** for communication with pfSense.
-   - Set the **pfSense VM** to use **Bridged Adapter** to allow it to act as the gateway for the network.
+   - Set the **Ubuntu VM** to use a **Internal Network** for communication with pfSense.
+   - Set the **pfSense VM** to use **Internal Network** to allow it to act as the gateway for the network.
 
 ### 4. Install pfSense on VirtualBox
    - Boot the pfSense VM with the pfSense ISO image.
@@ -35,8 +35,8 @@ This project aims to create a **Network Security Homelab** for learning and test
 
 ### 5. Install Wireshark on Ubuntu
    - Install Wireshark in Ubuntu by running:
-     sudo apt update
-     sudo apt install wireshark
+     sudo apt update (to update the software)
+     sudo apt install wireshark (to install the software)
    
    - Run Wireshark to start capturing network traffic on the configured interfaces.
 
@@ -48,14 +48,11 @@ This project aims to create a **Network Security Homelab** for learning and test
    - I reinstalled pfSense multiple times, ensuring that the installation image was removed from the virtual CD drive after the installation. This allowed pfSense to boot properly.
 
 ### Issue 2: Network Configuration Issue in Ubuntu
-- **Problem**: After configuring the network in VirtualBox, Ubuntu did not recognize changes when using `ifconfig`.
+- **Problem**: After configuring the network in VirtualBox, Ubuntu did not recognize changes when using `ifconfig` to view the inet of the pfsense machine.
 - **Solution**: 
-   - Verified that the network adapter in VirtualBox was correctly set up (e.g., using a **Bridged Adapter** or **Internal Network**).
+   - Verified that the network adapter in VirtualBox was correctly set up.
    - Restarted the network services in Ubuntu:
-   
-     sudo systemctl restart networking
- 
-   - Ensured proper IP address assignment by checking the adapter settings.
+
 
 ### Alternative Firewall: OPNsense
 - As a workaround to the pfSense installation issues, I explored and successfully set up **OPNsense** as a replacement for pfSense.
