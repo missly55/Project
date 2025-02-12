@@ -65,8 +65,5 @@ This project aims to create a **Network Security Homelab** for learning and test
 - **Wireshark Traffic Analysis**: Captured and analyzed network traffic to identify potential security vulnerabilities or misconfigurations.
 - **Network Troubleshooting**: Gained experience in solving common networking issues related to virtual machines and firewall configurations.
 
-## Example Network Traffic Capture
-- The project includes a sample Wireshark capture file (`capture_example.pcap`) that shows the network traffic between the VMs. You can analyze the file to see common protocols in use and how packets are transmitted across the network.
-
-##
+## 
 
