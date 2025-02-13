@@ -1,19 +1,19 @@
 # Projects
 # Network Security Homelab using VirtualBox, Wireshark, OPNSense, and Ubuntu
 
-## Overview
+## Project Overview:
 This project aims to create a **Network Security Homelab** for learning and testing network security concepts using **VirtualBox**, **OPNSense**, **Wireshark**, and **Ubuntu**. The objective was to simulate network environments, capture network traffic, and analyze it for potential security vulnerabilities. Along the way, I encountered several challenges that allowed me to gain hands-on experience with network troubleshooting, firewall configurations, and network analysis.
 
-## Technologies Used
+## Technologies Used:
 - **VirtualBox**: Virtualization software used to create and manage the virtual machines (VMs).
 - **OPNSense**: Open-source firewall/router software used to simulate network security features.
 - **Wireshark**: Network protocol analyzer for capturing and analyzing network traffic.
 - **Ubuntu**: Linux-based operating system used as a client to interact with the network.
 
 ## Objective
-- **Build a functional homelab for network security**: Set up a simulated network environment using VirtualBox, OPNSense, Ubuntu, and Wireshark.
-- **Capture and analyze network traffic**: Use Wireshark to capture packets and analyze network behavior.
-- **Troubleshoot installation and configuration issues**: Resolve installation and configuration challenges with VirtualBox, OPNSense, and Ubuntu networking.
+**Network Security Setup:** Simulate a network environment with Ubuntu and OPNSense.
+**Packet Capture and Analysis:** Use Wireshark to capture packets and analyze traffic between Ubuntu and OPNSense.
+**Network Troubleshooting:** Resolve installation and configuration issues with VirtualBox, OPNSense, and Ubuntu networking.
 
 ## Setup Guide
 
@@ -26,8 +26,8 @@ This project aims to create a **Network Security Homelab** for learning and test
    - **OPNSense**: Create a VM for OPNSense using the downloaded pfSense ISO. Allocate at least 1GB of RAM and configure network adapters as required.
 
 ### 3. Configure Networking in VirtualBox
-   - Set the **Ubuntu VM** to use a **InternalNetwork*** for communication with pfSense.
-   - Set the **OPNSense VM** to use **InternalNetwork** to allow it to act as the gateway for the network.
+** Ubuntu VM:** Configure Adapter 1 to use the Internal Network for communication with OPNSense.
+**OPNSense VM**: Configure Adapter 1 to use NAT (to get internet access) and Adapter 2 to use the Internal Network (to communicate with Ubuntu). This allows the Ubuntu VM to be connected to the OPNSense firewall/router for traffic routing.
 
 ### 4. Install OPNSense on VirtualBox
    - Boot the OPNSense VM with the OPNSense ISO image.
@@ -57,18 +57,15 @@ This project aims to create a **Network Security Homelab** for learning and test
 - **Solution**: 
    To resolve this, I used the macOS terminal to navigate to the directory where the installation image was saved. The following steps were taken:
 1. Navigating to the Download Directory:
-I opened the terminal and used the cd command to move into the "Downloads" folder where the 
-OPNsense image was located. The command used was:
-2. Decompressing the .bz2 File:
+I opened the terminal and used the cd command to move into the "Downloads" folder where the OPNsense image was located.
+The command used was:
+cd ~/Downloads
+bunzip2 opnsense-image.bz2
+
+3. Decompressing the .bz2 File:
 Once inside the correct directory, I ran the bunzip2 command to decompress the .bz2 file, which extracted the ISO image file needed for the installation:
 
 This step successfully extracted the OPNsense installation image, allowing me to proceed with creating a bootable installation drive or using the image in a virtual environment.
-
-### Issue 2: Network Configuration Issue in Ubuntu
-- **Problem**: After configuring the network in VirtualBox, Ubuntu did not recognize changes when using `ifconfig` to view the inet of the pfsense machine.
-- **Solution**: 
-   - Verified that the network adapter in VirtualBox was correctly set up.
-   - Restarted the network services in Ubuntu:
 
 ## What I Accomplished
 - **Network Security Setup**: Successfully set up Ubuntu and pfSense (or OPNsense) to create a virtualized network environment.
