@@ -26,14 +26,14 @@ This project aims to create a **Network Security Homelab** for learning and test
    - **OPNSense**: Create a VM for OPNSense using the downloaded pfSense ISO. Allocate at least 1GB of RAM and configure network adapters as required.
 
 ### 3. Configure Networking in VirtualBox
-   - Set the **Ubuntu VM** to use a **Internal Network** for communication with pfSense.
-   - Set the **OPNSense VM** to use **Internal Network** to allow it to act as the gateway for the network.
+   - Set the **Ubuntu VM** to use a **InternalNetwork*** for communication with pfSense.
+   - Set the **OPNSense VM** to use **InternalNetwork** to allow it to act as the gateway for the network.
 
 ### 4. Install OPNSense on VirtualBox
    - Boot the OPNSense VM with the OPNSense ISO image.
    - Follow the installation prompts to complete the OPNSense setup. (In case OPNSense fails to reboot, refer to troubleshooting steps below.)
    - Using command to decompress the .bz2 file (on MAC) using the teminal:
-     <img width="250" alt="Terminal" src="https://github.com/user-attachments/assets/821bdd04-75df-4b61-9df7-3c3bfd50400e" />
+     <img width="300" alt="Terminal" src="https://github.com/user-attachments/assets/821bdd04-75df-4b61-9df7-3c3bfd50400e" />
      
 
 ### 5. Install Wireshark on Ubuntu
@@ -51,19 +51,22 @@ This project aims to create a **Network Security Homelab** for learning and test
 ## Troubleshooting Steps
 
 ### Issue 1: OPNSense Installation Issues
-- **Problem**: After installation, pfSense would not reboot correctly due to the forced unmounting of the installation image.
+- **Problem**: After downloading the OPNsense installation image, I encountered an issue where the downloaded file was in a compressed .bz2 format. This meant that the image file couldn’t be used directly for installation, as it needed to be decompressed first.
 - **Solution**: 
-   - I reinstalled pfSense multiple times, ensuring that the installation image was removed from the virtual CD drive after the installation. This allowed pfSense to boot properly.
+   To resolve this, I used the macOS terminal to navigate to the directory where the installation image was saved. The following steps were taken:
+1. Navigating to the Download Directory:
+I opened the terminal and used the cd command to move into the "Downloads" folder where the 
+OPNsense image was located. The command used was:
+2. Decompressing the .bz2 File:
+Once inside the correct directory, I ran the bunzip2 command to decompress the .bz2 file, which extracted the ISO image file needed for the installation:
+
+This step successfully extracted the OPNsense installation image, allowing me to proceed with creating a bootable installation drive or using the image in a virtual environment.
 
 ### Issue 2: Network Configuration Issue in Ubuntu
 - **Problem**: After configuring the network in VirtualBox, Ubuntu did not recognize changes when using `ifconfig` to view the inet of the pfsense machine.
 - **Solution**: 
    - Verified that the network adapter in VirtualBox was correctly set up.
    - Restarted the network services in Ubuntu:
-
-
-### Alternative Firewall: OPNsense
-- As a workaround to the pfSense installation issues, I explored and successfully set up **OPNsense** as a replacement for pfSense.
 
 ## What I Accomplished
 - **Network Security Setup**: Successfully set up Ubuntu and pfSense (or OPNsense) to create a virtualized network environment.
