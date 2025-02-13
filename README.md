@@ -29,6 +29,7 @@ This project aims to create a **Network Security Homelab** for learning and test
 ** Ubuntu VM:** Configure Adapter 1 to use the Internal Network for communication with OPNSense.
 **OPNSense VM**: Configure Adapter 1 to use NAT (to get internet access) and Adapter 2 to use the Internal Network (to communicate with Ubuntu). This allows the Ubuntu VM to be connected to the OPNSense firewall/router for traffic routing.
 
+
 <img width="500" alt="Ubuntu Network Configuration" src="https://github.com/user-attachments/assets/aada855b-7920-4aa3-b01c-b6d69fce17f2" />
 
 <img width="500" alt="OPNSense Network Configuration" src="https://github.com/user-attachments/assets/09b85b9b-be47-42ee-9ef2-fa694aa3c120" />
@@ -65,9 +66,9 @@ This project aims to create a **Network Security Homelab** for learning and test
    To resolve this, I used the macOS terminal to navigate to the directory where the installation image was saved. The following steps were taken:
 1. Navigating to the Download Directory:
 I opened the terminal and used the cd command to move into the "Downloads" folder where the OPNsense image was located.
+
 The command used was:
 cd ~/Downloads (move through the directory)
-
 bunzip2 opnsense-image.bz2
 
 3. Decompressing the .bz2 File:
