@@ -40,7 +40,7 @@ This project aims to create a **Network Security Homelab** for learning and test
    - Install Wireshark in Ubuntu by running:
      sudo apt update (to update the software)
      sudo apt install wireshark (to install the software) 
-     <img width="400" alt="Installation of Wireshark within Ubuntu" src="https://github.com/user-attachments/assets/124a67b7-34ec-498e-aa12-46d0dd4c63ac" />
+     <img width="450" alt="Installation of Wireshark within Ubuntu" src="https://github.com/user-attachments/assets/124a67b7-34ec-498e-aa12-46d0dd4c63ac" />
    - Run Wireshark to start capturing network traffic on the configured interfaces.
 
     <img width="300" alt="Desktop Environment" src="https://github.com/user-attachments/assets/d688bf26-84a4-419d-a0eb-6bc0eae6c346" />
