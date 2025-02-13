@@ -72,5 +72,10 @@ This step successfully extracted the OPNsense installation image, allowing me to
 - **Wireshark Traffic Analysis**: Captured and analyzed network traffic to identify potential security vulnerabilities or misconfigurations.
 - **Network Troubleshooting**: Gained experience in solving common networking issues related to virtual machines and firewall configurations.
 
-## 
+## Helpful Resources:
+- [Homelab Setup Guide - Video 1]([https://www.youtube.com/watch?v=examplelink1](https://www.youtube.com/watch?v=kku0fVfksrk))
+ _This video helped me understand what a homelab is and to setup the environment._
+
+-  [Networking Basics for Homelab]([https://www.youtube.com/watch?v=examplelink2](https://www.youtube.com/watch?v=5iafC6vj7kM&t=312s))  
+  _This video was useful for configuring networking in my lab._
 
