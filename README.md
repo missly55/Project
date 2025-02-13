@@ -29,6 +29,13 @@ This project aims to create a **Network Security Homelab** for learning and test
 ** Ubuntu VM:** Configure Adapter 1 to use the Internal Network for communication with OPNSense.
 **OPNSense VM**: Configure Adapter 1 to use NAT (to get internet access) and Adapter 2 to use the Internal Network (to communicate with Ubuntu). This allows the Ubuntu VM to be connected to the OPNSense firewall/router for traffic routing.
 
+<img width="500" alt="Ubuntu Network Configuration" src="https://github.com/user-attachments/assets/aada855b-7920-4aa3-b01c-b6d69fce17f2" />
+
+<img width="500" alt="OPNSense Network Configuration" src="https://github.com/user-attachments/assets/09b85b9b-be47-42ee-9ef2-fa694aa3c120" />
+
+<img width="500" alt="OPNSense Network Configuration" src="https://github.com/user-attachments/assets/320c9f36-5968-47ec-be7d-19b9536f1635" />
+
+
 ### 4. Install OPNSense on VirtualBox
    - Boot the OPNSense VM with the OPNSense ISO image.
    - Follow the installation prompts to complete the OPNSense setup. (In case OPNSense fails to reboot, refer to troubleshooting steps below.)
