@@ -66,7 +66,8 @@ This project aims to create a **Network Security Homelab** for learning and test
 1. Navigating to the Download Directory:
 I opened the terminal and used the cd command to move into the "Downloads" folder where the OPNsense image was located.
 The command used was:
-cd ~/Downloads
+cd ~/Downloads (move through the directory)
+
 bunzip2 opnsense-image.bz2
 
 3. Decompressing the .bz2 File:
