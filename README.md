@@ -46,7 +46,8 @@ This project aims to create a **Network Security Homelab** for learning and test
 
    - Desktop Environment:
 
-    <img width="300" alt="Desktop Environment" src="https://github.com/user-attachments/assets/d688bf26-84a4-419d-a0eb-6bc0eae6c346" />
+  <img width="765" alt="Desktop" src="https://github.com/user-attachments/assets/53a305f4-cf74-4c8d-a586-5bc83d078012" />
+
 
 
 ## Troubleshooting Steps
