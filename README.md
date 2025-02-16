@@ -1,5 +1,5 @@
 # Projects
-# Network Security Homelab using VirtualBox, Wireshark, OPNSense, and Ubuntu
+# Network Security Homelab
 
 ## Project Overview:
 This project aims to create a **Network Security Homelab** for learning and testing network security concepts using **VirtualBox**, **OPNSense**, **Wireshark**, and **Ubuntu**. The objective was to simulate network environments, capture network traffic, and analyze it for potential security vulnerabilities. Along the way, I encountered several challenges that allowed me to gain hands-on experience with network troubleshooting, firewall configurations, and network analysis.
