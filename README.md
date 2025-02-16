@@ -29,6 +29,14 @@ This project aims to create a **Network Security Homelab** for learning and test
 ** Ubuntu VM:** Configure Adapter 1 to use the Internal Network for communication with OPNSense.
 **OPNSense VM**: Configure Adapter 1 to use NAT (to get internet access) and Adapter 2 to use the Internal Network (to communicate with Ubuntu). This allows the Ubuntu VM to be connected to the OPNSense firewall/router for traffic routing.
 
+- Network Setup:
+**OPNsense VM has:**
+  Adapter 1: NAT (provides internet access to the OPNsense VM).
+  Adapter 2: Internal Network (for communication with the Ubuntu VM).
+**Ubuntu VM has:**
+Adapter 1: Internal Network (to communicate with OPNsense).
+
+- OPNsense and Ubuntu can communicate over the Internal Network while the OPNsense VM has internet access through the NAT adapter.
 
 <img width="500" alt="Ubuntu Network Configuration" src="https://github.com/user-attachments/assets/aada855b-7920-4aa3-b01c-b6d69fce17f2" />
 
