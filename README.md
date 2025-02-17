@@ -26,7 +26,7 @@ This project aims to create a **Network Security Homelab** for learning and test
    - **OPNSense**: Create a VM for OPNSense using the downloaded pfSense ISO. Allocate at least 1GB of RAM and configure network adapters as required.
 
 ### 3. Configure Networking in VirtualBox
-** Ubuntu VM:** Configure Adapter 1 to use the Internal Network for communication with OPNSense.
+** Ubuntu VM:** Configure Adapter 1 to use the NAT and adapter 2 to use the Internal Network for communication with OPNSense.
 **OPNSense VM**: Configure Adapter 1 to use NAT (to get internet access) and Adapter 2 to use the Internal Network (to communicate with Ubuntu). This allows the Ubuntu VM to be connected to the OPNSense firewall/router for traffic routing.
 
 - Network Setup:
